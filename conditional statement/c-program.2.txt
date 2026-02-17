@@ -1,0 +1,26 @@
+#include <stdio.h>
+int main(){
+    int a,b,c,d,e,f;
+    scanf("%d %d %d %d %d %d",&a,&b,&c,&d,&e,&f);
+    float average = (a+b+c+d+e+f)/6;
+    printf("Average: %2.f\n",average);
+    if(average>=90){
+        printf("A");
+    }
+    else if(average>=80){
+        printf("B");
+    }
+    else if(c>=70){
+        printf("C");
+    }
+    else if(d>=60){
+        printf("d");
+    }
+    else if(e>=50){
+        printf("E");
+    }
+    else{
+        printf("F");
+    }
+    return 0;
+}
