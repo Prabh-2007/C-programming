@@ -1,0 +1,24 @@
+#include <stdio.h>
+int main(){
+    int X,Y,Z;
+    scanf("%d %d %d",&X,&Y,&Z);
+    if(X,Y,Z == 0){
+        printf("origin");
+    }
+    else if(X,Y == 0){
+        printf("Z axis");
+    }
+    else if(X,Z == 0){
+        printf("Y axis");
+    }
+    else if(Y,Z == 0){
+        printf("Z axis");
+    }
+    else if(X == 0){
+        printf("YZ plane");
+    }
+    else{
+        printf("invalid");
+    }
+    return 0;
+}
