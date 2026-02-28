@@ -1,0 +1,15 @@
+#include <stdio.h>
+int main(){
+    int T,P,RPM;
+    scanf("%d %d %d",&T,&P,&RPM);
+    if(T>75 && P<12 && RPM>7000){
+        printf("engine is poor");
+    }
+    else if(T>50 && P<12 && RPM>4000){
+        printf("engine is fair");
+    }
+    else{
+        printf("closed");
+    }
+    return 0;
+}
