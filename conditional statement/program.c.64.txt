@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+int main()
+{
+    float price, total, final;
+    int qty;
+    char m;
+
+    printf("Enter price: ");
+    scanf("%f", &price);
+
+    printf("Enter quantity: ");
+    scanf("%d", &qty);
+
+    printf("Enter middleman (A/B/C): ");
+    scanf(" %c", &m);
+
+    total = price * qty;
+
+    if (m == 'A')
+        final = total * 0.95;   
+    else if (m == 'B')
+        final = total * 0.90;   
+    else if (m == 'C')
+        final = total * 0.85;   
+    else
+        final = total;
+
+    printf("Original Amount = %.2f\n", total);
+    printf("Final Amount = %.2f\n", final);
+
+    return 0;
+}
