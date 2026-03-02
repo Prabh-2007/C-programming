@@ -1,0 +1,52 @@
+#include <stdio.h>
+
+int main() {
+
+    int choice;
+    float r, h, a;
+    float surface, volume;
+    float pi = 3.14;
+
+    // Menu
+    printf("Choose a shape:\n");
+    printf("1. Sphere\n");
+    printf("2. Cube\n");
+    printf("3. Cylinder\n");
+    printf("Enter your choice: ");
+    scanf("%d", &choice);
+
+    // Sphere
+    if(choice == 1) {
+        printf("Enter radius: ");
+        scanf("%f", &r);
+
+        surface = 4 * pi * r * r;
+        volume = (4.0/3.0) * pi * r * r * r;
+
+        printf("Surface Area = %.2f\n", surface);
+        printf("Volume = %.2f\n", volume);
+    }
+    else if(choice == 2) {
+        printf("Enter side: ");
+        scanf("%f", &a);
+        surface = 6 * a * a;
+        volume = a * a * a;
+        printf("Surface Area = %.2f\n", surface);
+        printf("Volume = %.2f\n", volume);
+    }
+    else if(choice == 3) {
+        printf("Enter radius: ");
+        scanf("%f", &r);
+        printf("Enter height: ");
+        scanf("%f", &h);
+        surface = 2 * pi * r * (r + h);
+        volume = pi * r * r * h;
+        printf("Surface Area = %.2f\n", surface);
+        printf("Volume = %.2f\n", volume);
+    }
+    else {
+        printf("Invalid choice\n");
+    }
+
+    return 0;
+}
