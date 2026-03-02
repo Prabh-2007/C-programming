@@ -1,0 +1,24 @@
+#include<stdio.h>
+int main(){
+    int a;
+    scanf("%d",&a);
+    if(a<=5){
+        printf("cub");
+    }
+    else if(a<=10){
+        printf("juvenile");
+    }
+    else if(a<=15){
+        printf("subadualt");
+    }
+    else if(a<=20){
+        printf("young adualt");
+    }
+    else if(a<=26){
+        printf("old adualt");
+    }
+    else{
+        printf("invalid");
+    }
+    return 0;
+}
