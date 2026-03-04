@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+int main() {
+    int days;
+    char type;
+    float fine = 0.0;
+
+    printf("Enter Book Type (R/F): ");
+    scanf(" %c", &type);
+
+    printf("Enter Number of Late Days: ");
+    scanf("%d", &days);
+
+    if(days <= 0) {
+        fine = 0.0;
+    }
+    else if(type == 'R' || type == 'r') {
+        fine = days * 0.50;
+    }
+    else if(type == 'F' || type == 'f') {
+        fine = days * 1.00;
+    }
+    else {
+        printf("Invalid Input");
+        return 0;
+    }
+
+    printf("Library Fine: %.2f", fine);
+
+    return 0;
+}
