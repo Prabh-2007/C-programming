@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main() {
+    float balance = 10000;
+    float withdraw;
+
+    printf("Enter withdrawal amount: ");
+    scanf("%f", &withdraw);
+
+    if(withdraw <= 0)
+        printf("Invalid Amount");
+    else if(withdraw > balance)
+        printf("Insufficient Balance");
+    else {
+        balance = balance - withdraw;
+        printf("Remaining Balance: %.2f", balance);
+    }
+
+    return 0;
+}
