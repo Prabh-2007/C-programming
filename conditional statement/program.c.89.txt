@@ -1,0 +1,24 @@
+#include <stdio.h>
+int main() {
+    char gender;
+    float salary, bonus;
+    scanf(" %c", &gender);
+    scanf("%f", &salary);
+    if(salary <= 0) {
+        bonus = 0;
+        printf("Bonus: %.2f", bonus);
+    }
+    else if(gender == 'M' || gender == 'm') {
+        bonus = salary * 0.05;
+        printf("Bonus: %.2f", bonus);
+    }
+    else if(gender == 'F' || gender == 'f') {
+        bonus = salary * 0.10;
+        printf("Bonus: %.2f", bonus);
+    }
+    else {
+        printf("Invalid Input");
+    }
+
+    return 0;
+}
