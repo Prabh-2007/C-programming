@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+int main() {
+    int angle;
+
+    printf("Enter angle (0 to 360): ");
+    scanf("%d", &angle);
+
+    if(angle < 0 || angle > 360)
+        printf("Invalid Input");
+    else if(angle == 0 || angle == 360)
+        printf("North");
+    else if(angle > 0 && angle < 90)
+        printf("North-East");
+    else if(angle == 90)
+        printf("East");
+    else if(angle > 90 && angle < 180)
+        printf("South-East");
+    else if(angle == 180)
+        printf("South");
+    else if(angle > 180 && angle < 270)
+        printf("South-West");
+    else if(angle == 270)
+        printf("West");
+    else
+        printf("North-West");
+
+    return 0;
+}
