@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main()
+{
+    float value;
+    char unit;
+
+    printf("Enter value: ");
+    scanf("%f",&value);
+
+    printf("Enter unit (k for km, m for metre): ");
+    scanf(" %c",&unit);
+
+    if(unit=='k')
+        printf("Metres = %.2f", value*1000);
+    else if(unit=='m')
+        printf("Kilometres = %.2f", value/1000);
+    else
+        printf("Invalid unit");
+
+    return 0;
+}
