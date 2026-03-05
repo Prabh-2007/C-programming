@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() 
+{
+    float distance, km;
+
+    printf("Enter the distance: ");
+    scanf("%f", &distance);
+
+    if(distance > 1000)
+    {
+        km = distance / 1000;
+        printf("Distance in kilometres: %.2f", km);
+    }
+    else
+    {
+        printf("Distance in centimetres: %.2f", distance);
+    }
+
+    return 0;
+}
