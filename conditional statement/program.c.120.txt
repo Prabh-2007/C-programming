@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main()
+{
+    char size;
+
+    printf("Enter dress size (S/M/L/XL): ");
+    scanf(" %c",&size);
+
+    if(size=='S')
+        printf("Small Size");
+    else if(size=='M')
+        printf("Medium Size");
+    else if(size=='L')
+        printf("Large Size");
+    else if(size=='X')
+        printf("Extra Large Size");
+    else
+        printf("Invalid Size");
+
+    return 0;
+}
