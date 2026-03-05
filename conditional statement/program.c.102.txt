@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main()
+{
+    int seat;
+
+    printf("Enter seat number: ");
+    scanf("%d", &seat);
+
+    if(seat >= 1 && seat <= 30)
+    {
+        printf("Seat Status: Available");
+    }
+    else if(seat >= 31 && seat <= 60)
+    {
+        printf("Seat Status: Reserved");
+    }
+    else if(seat >= 61 && seat <= 100)
+    {
+        printf("Seat Status: Occupied");
+    }
+    else
+    {
+        printf("Invalid seat number");
+    }
+
+    return 0;
+}
