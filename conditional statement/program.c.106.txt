@@ -1,0 +1,42 @@
+#include <stdio.h>
+
+int main()
+{
+    int choice;
+    float mass, velocity, height, KE, PE;
+    float g = 9.8;
+
+    printf("Choose Energy Calculation:\n");
+    printf("1. Kinetic Energy\n");
+    printf("2. Potential Energy\n");
+
+    printf("Enter your choice: ");
+    scanf("%d", &choice);
+
+    if(choice == 1)
+    {
+       
+        scanf("%f", &mass);
+        scanf("%f", &velocity);
+
+        KE = 0.5 * mass * velocity * velocity;
+    }
+    else if(choice == 2)
+    {
+        printf("Enter mass (kg): ");
+        scanf("%f", &mass);
+
+        printf("Enter height (m): ");
+        scanf("%f", &height);
+
+        PE = mass * g * height;
+
+        printf("Potential Energy = %.2f Joules", PE);
+    }
+    else
+    {
+        printf("Invalid choice.");
+    }
+
+    return 0;
+}
