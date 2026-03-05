@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main()
+{
+    int temp;
+
+    printf("Enter temperature: ");
+    scanf("%d",&temp);
+
+    if(temp < 20)
+        printf("Weather: Cold");
+    else if(temp <= 30)
+        printf("Weather: Normal");
+    else
+        printf("Weather: Hot");
+
+    return 0;
+}
