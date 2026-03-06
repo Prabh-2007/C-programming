@@ -1,0 +1,14 @@
+#include <stdio.h>
+int main() {
+    int marks;
+
+    printf("Enter marks: ");
+    scanf("%d",&marks);
+
+    if(marks>=0 && marks<=100)
+        printf("Valid Marks");
+    else
+        printf("Invalid Marks");
+
+    return 0;
+}
