@@ -1,0 +1,14 @@
+#include <stdio.h>
+int main() {
+    int pass;
+
+    printf("Enter password: ");
+    scanf("%d",&pass);
+
+    if(pass==1234)
+        printf("Correct Password");
+    else
+        printf("Wrong Password");
+
+    return 0;
+}
