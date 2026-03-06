@@ -1,0 +1,14 @@
+#include <stdio.h>
+int main() {
+    int amount;
+
+    printf("Enter amount: ");
+    scanf("%d",&amount);
+
+    if(amount%100==0)
+        printf("Valid withdrawal");
+    else
+        printf("Invalid amount");
+
+    return 0;
+}
