@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+    int n;
+    scanf("%d",&n);
+
+    int x = sqrt(n+1);
+
+    if(x*x == (n+1))
+        printf("Sunny Number");
+    else
+        printf("Not Sunny");
+
+    return 0;
+}
