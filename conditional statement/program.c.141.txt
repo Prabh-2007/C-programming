@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main()
+{
+    int pass;
+
+    scanf("%d",&pass);
+
+    if(pass >= 1000 && pass <= 9999)
+        printf("Strong Password");
+    else
+        printf("Weak Password");
+
+    return 0;
+}
