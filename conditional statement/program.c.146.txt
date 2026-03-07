@@ -1,0 +1,14 @@
+#include <stdio.h>
+int main()
+{
+    int guess, num=5;
+
+    scanf("%d",&guess);
+
+    if(guess==num)
+        printf("Correct Guess");
+    else
+        printf("Wrong Guess");
+
+    return 0;
+}
