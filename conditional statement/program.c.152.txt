@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main()
+{
+    int n,sq,r,sum;
+
+    scanf("%d",&n);
+
+    sq=n*n;
+
+    r=sq%10;
+    sum=r+(sq/10);
+
+    if(sum==n)
+        printf("Kaprekar Number");
+    else
+        printf("Not Kaprekar");
+
+    return 0;
+}
