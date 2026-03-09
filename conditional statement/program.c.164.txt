@@ -1,0 +1,15 @@
+#include<stdio.h>
+int main(){
+    int a,b;
+    scanf("%d %d",&a,&b);
+    float total;
+    if(a == b){
+        total = a*b;
+        printf("square = %.2f",total);
+    }
+    else{
+        total = 2*(a+b);
+        printf("triangle = %.2f",total);
+    }
+    return 0;
+}
