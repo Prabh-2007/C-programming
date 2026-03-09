@@ -1,0 +1,15 @@
+#include<stdio.h>
+int main()
+{
+    float salary, exp, bonus, final_salary;
+
+    scanf("%f %f",&salary,&exp);
+
+    bonus = salary * exp;
+    final_salary = salary + bonus;
+
+    printf("Bonus = %.2f\n", bonus);
+    printf("Final Salary = %.2f", final_salary);
+
+    return 0;
+}
